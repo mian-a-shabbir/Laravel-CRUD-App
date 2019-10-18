@@ -16,8 +16,9 @@ Route::get('/', function () {
 });
 
 
-/*
+Route::resource('projects', 'ProjectsController');
 
+/*
     GET /projects (index)
 
     GET /projects/create (create)
@@ -31,10 +32,7 @@ Route::get('/', function () {
     PATCH /projects/1 (update)
 
     DELETE /projects/1 (delete)
-
 */
-
-Route::resource('projects', 'ProjectsController');
 
 // Route::get('/projects', 'ProjectsController@index');
 // Route::get('/projects/create', 'ProjectsController@create');
